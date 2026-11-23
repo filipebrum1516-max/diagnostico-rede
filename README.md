@@ -1,6 +1,6 @@
 # 🛠️ Diagnóstico de Rede
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Testes](https://github.com/filipebrum1516-max/diagnostico-rede/actions/workflows/testes.yml/badge.svg)
 ![Sem dependências](https://img.shields.io/badge/depend%C3%AAncias-nenhuma-brightgreen)
 ![Licença MIT](https://img.shields.io/badge/licen%C3%A7a-MIT-blue)
@@ -70,7 +70,7 @@ Relatório completo: [`docs/exemplo_relatorio.txt`](docs/exemplo_relatorio.txt)
 
 ## 🚀 Como usar
 
-Requer apenas **Python 3.9 ou superior**. Não precisa instalar nenhuma biblioteca.
+Requer apenas **Python 3.10 ou superior**. Não precisa instalar nenhuma biblioteca.
 
 ```bash
 git clone https://github.com/filipebrum1516-max/diagnostico-rede.git
