@@ -1,0 +1,40 @@
+================================================================
+  RELATÓRIO DE DIAGNÓSTICO DE REDE
+================================================================
+  Data/hora: 23/11/2026 14:32:10
+  Cliente:   Cliente 10482
+  Resultado: [ X ] Problema encontrado
+
+DADOS COLETADOS
+  IP local               192.168.1.10
+  Gateway (roteador)     192.168.1.1
+  Ping roteador          192.168.1.1: média 23.6 ms | perda 10.0% | jitter 45.5 ms
+  Ping internet (IP)     8.8.8.8: média 51.1 ms | perda 10.0% | jitter 51.9 ms
+  Ping site (nome)       google.com: média 49.4 ms | perda 0.0% | jitter 43.8 ms
+  DNS google.com         18.4 ms -> 142.250.79.46
+  DNS youtube.com        21.0 ms -> 142.250.219.206
+  DNS whatsapp.com       19.7 ms -> 157.240.12.53
+  Porta google.com:80    aberta (29.1 ms)
+  Porta google.com:443   aberta (30.4 ms)
+  Velocidade download    96.3 Mbps
+
+DIAGNÓSTICO
+  [ ! ] Conexão instável com o roteador: Latência até o roteador de 23.6 ms e perda de 10.0%. Indica sinal Wi-Fi fraco ou interferência.
+        -> Testar via cabo para confirmar se o problema é o Wi-Fi
+        -> Usar a rede de 5 GHz se o dispositivo estiver perto do roteador
+        -> Trocar o canal do Wi-Fi 2.4 GHz (1, 6 ou 11) para fugir de interferência
+        -> Verificar quantos dispositivos estão conectados ao mesmo tempo
+  [ ! ] Internet instável: Foi encontrado: perda de pacotes de 10.0%, variação alta (jitter de 51.9 ms). Isso causa lentidão, travamentos em vídeos e lag em jogos.
+        -> Comparar com o ping até o roteador para saber se a causa é o Wi-Fi
+        -> Verificar a potência óptica da ONU (ideal entre -8 e -25 dBm)
+        -> Verificar se algum dispositivo está fazendo download pesado
+        -> Se persistir via cabo: escalar para análise do NOC
+  [ OK ] DNS: Todos os domínios foram resolvidos.
+  [ X ] Velocidade: 96.3 Mbps medidos, 32% do plano de 300 Mbps.
+        -> Refazer o teste via cabo (o Wi-Fi limita a velocidade)
+        -> Desconectar outros dispositivos durante o teste
+        -> Verificar se a placa de rede ou o cabo suporta a velocidade do plano
+        -> Se via cabo continuar abaixo de 40%: escalar para análise do NOC
+
+  >> Recomendação: se os passos acima não resolverem, ESCALAR o chamado.
+================================================================
